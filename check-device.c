@@ -1,8 +1,10 @@
 #include "check-device.h"
 #include <stdio.h>
 
-int check_device(libusb_device_handle *dev, KeyboardIdentifier *keyboard_id) {
+int check_device(libusb_device_handle *dev) {
   uint16_t vendor_id, product_id;
+  const uint16_t L_VENDOR_ID = 0x1234;  // Example vendor ID
+  const uint16_t L_PRODUCT_ID = 0x1234; // Example vendor ID
   int ret;
 
   // Get the device descriptor
@@ -18,8 +20,7 @@ int check_device(libusb_device_handle *dev, KeyboardIdentifier *keyboard_id) {
   vendor_id = desc.idVendor;
   product_id = desc.idProduct;
 
-  if (vendor_id == keyboard_id->vendor_id &&
-      product_id == keyboard_id->product_id) {
+  if (vendor_id == L_VENDOR_ID && product_id == L_PRODUCT_ID) {
     return 1; // Device matches
   } else {
     return 0; // Device does not match
