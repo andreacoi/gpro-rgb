@@ -17,6 +17,12 @@ No bloated software. No spyware. Just pure, simple control — _by gamers, for g
 
 Because sometimes you just want your keyboard to look _awesome_ without having to install a 500MB "gaming suite" that eats your RAM for breakfast.
 
+## Dependencies 📦
+
+This app is built with the following dependencies:
+
+- [libusb](https://libusb.info/) - For USB device communication;
+
 ## Installation 🛠️
 
 _(Coming soon!)_  
