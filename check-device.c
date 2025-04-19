@@ -60,5 +60,6 @@ int check_device() {
     fprintf(stderr, "Error: libusb_init failed\n");
     int ru = 0;
   }
-  return ru;
+  // return ru;
+  // TODO:  check the logics and return values
 }
