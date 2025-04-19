@@ -7,5 +7,5 @@
 extern const uint16_t L_VENDOR_ID;
 extern const uint16_t L_PRODUCT_ID;
 
-int check_device(libusb_device_handle *dev);
+int check_device();
 #endif // ! CHECK_DEV
