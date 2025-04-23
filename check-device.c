@@ -4,9 +4,8 @@
 #include <sys/types.h>
 
 int check_device() {
-  const uint16_t L_VENDOR_ID = 0x174f;  // Example vendor ID
-  const uint16_t L_PRODUCT_ID = 0x1176; // Example vendor ID
-
+  const uint16_t L_VENDOR_ID = 0x046d;  // Example vendor ID
+  const uint16_t L_PRODUCT_ID = 0xc339; // Example vendor ID
   // initialize context for libusb
   libusb_context *ctx = NULL;
   // create a list of devices - iterable
